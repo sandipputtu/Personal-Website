@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sandip Kumar, IAS - Official Website</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+          <img src="" alt="Sandip Kumar, IAS" class="header-profile">
+          <div class="header-text">
+            <h1>Sandip Kumar, IAS</h1>
+            <p>Director, IT Mission | Public Servant | Visionary Leader</p>
+          </div>
+        </div>
+      </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <s<section id="about">
+        <h2>About Me</h2>
+      <p>
+        Sandip Kumar, IAS, is an accomplished administrator known for his innovative
+        approaches to governance and community development. With over 5 years of service,
+        he has championed initiatives in Tribal welfare, Tourism, and Digital transformation.
+      </p>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Brought transformational changed in the Aralam Farming Corporation</li>
+        <li>Awarded the Best Sub Collector Award in 2024</li>
+        <li>Conducted Thalassery Hertage Run to promote tourism</li>
+        <li>Overviewed Many developmental projects as District Development Commissioner</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project A: Digital Kerala Architecture</h3>
+        <p>
+          A mission to provide all Kerala government services through a single window platform
+        </p>
+      </div>
+      <div class="project">
+        <h3>Project B: Unified Registry</h3>
+        <p>
+          An initiative focused on building a golden record of service delivery to citizens
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to reach out, please use the following details:</p>
+      <ul>
+        <li>Email: sandip.kr@ias.gov.in</li>
+        <li>Phone: +91-7381250020</li>
+        <li>Office Address: Kerala State IT Mission, Pattom , Thiruvanathapuram, Kerala, India.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sandip Kumar, IAS. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* Header */
+header {
+    background-color: #1E90FF;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #1E90FF;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #1E90FF;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+</style>

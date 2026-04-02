@@ -5,70 +5,198 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sandip Kumar, IAS - Official Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e90ff;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      background-color: #333;
+      overflow: hidden;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      background-color: #1e90ff;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 980px;
+      margin: 0 auto 80px;
+    }
+
+    h2 {
+      color: #1e90ff;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      margin-bottom: 1rem;
+    }
+
+    .dss-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+
+    textarea,
+    select,
+    input[type="file"] {
+      width: 100%;
+      border: 1px solid #c8d2de;
+      border-radius: 8px;
+      padding: 0.65rem;
+      box-sizing: border-box;
+      font: inherit;
+      background: #fff;
+    }
+
+    textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    .btn {
+      margin-top: 1rem;
+      border: none;
+      background: #1e90ff;
+      color: white;
+      font-weight: 700;
+      padding: 0.7rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 1rem;
+      border-left: 6px solid #1e90ff;
+      background: #eef6ff;
+      padding: 0.9rem;
+      border-radius: 8px;
+      display: none;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-          <img src="" alt="Sandip Kumar, IAS" class="header-profile">
-          <div class="header-text">
-            <h1>Sandip Kumar, IAS</h1>
-            <p>Director, IT Mission | Public Servant | Visionary Leader</p>
-          </div>
-        </div>
-      </header>
+  <header>
+    <h1>Sandip Kumar, IAS</h1>
+    <p>Director, IT Mission | Public Servant | Visionary Leader</p>
+  </header>
 
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#dss">Decision Support</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <main>
-    <s<section id="about">
-        <h2>About Me</h2>
+    <section id="about" class="card">
+      <h2>About Me</h2>
       <p>
-        Sandip Kumar, IAS, is an accomplished administrator known for his innovative
-        approaches to governance and community development. With over 5 years of service,
-        he has championed initiatives in Tribal welfare, Tourism, and Digital transformation.
+        Sandip Kumar, IAS, is an accomplished administrator known for innovative governance,
+        community development and digital transformation.
       </p>
     </section>
 
-    <section id="achievements">
+    <section id="achievements" class="card">
       <h2>Achievements</h2>
       <ul>
-        <li>Brought transformational changed in the Aralam Farming Corporation</li>
-        <li>Awarded the Best Sub Collector Award in 2024</li>
-        <li>Conducted Thalassery Hertage Run to promote tourism</li>
-        <li>Overviewed Many developmental projects as District Development Commissioner</li>
+        <li>Led transformational change in Aralam Farming Corporation</li>
+        <li>Received Best Sub Collector Award in 2024</li>
+        <li>Conducted Thalassery Heritage Run to promote tourism</li>
       </ul>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="card">
       <h2>Projects</h2>
-      <div class="project">
-        <h3>Project A: Digital Kerala Architecture</h3>
-        <p>
-          A mission to provide all Kerala government services through a single window platform
-        </p>
-      </div>
-      <div class="project">
-        <h3>Project B: Unified Registry</h3>
-        <p>
-          An initiative focused on building a golden record of service delivery to citizens
-        </p>
-      </div>
+      <p>Digital Kerala Architecture and Unified Registry initiatives.</p>
     </section>
 
-    <section id="contact">
+    <section id="dss" class="card">
+      <h2>E-Office Decision Support System</h2>
+      <p>
+        Upload file + noting and get a suggested decision draft with reasoning. This is a rule-based assistant
+        for quick support and should be reviewed by the approving authority before final order.
+      </p>
+
+      <div class="dss-grid">
+        <div>
+          <label for="officeFile">Office File (PDF/DOC/Image)</label>
+          <input id="officeFile" type="file">
+        </div>
+        <div>
+          <label for="priority">Priority</label>
+          <select id="priority">
+            <option value="normal">Normal</option>
+            <option value="urgent">Urgent</option>
+            <option value="timebound">Time-bound</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="notingInput">Noting / File Summary</label>
+      <textarea id="notingInput" placeholder="Example: Vendor has completed 96% of work. Payment of final bill pending technical clearance..."></textarea>
+
+      <button id="suggestBtn" class="btn">Suggest Decision</button>
+
+      <div id="result" class="result" aria-live="polite"></div>
+    </section>
+
+    <section id="contact" class="card">
       <h2>Contact</h2>
-      <p>If you'd like to reach out, please use the following details:</p>
       <ul>
         <li>Email: sandip.kr@ias.gov.in</li>
         <li>Phone: +91-7381250020</li>
-        <li>Office Address: Kerala State IT Mission, Pattom , Thiruvanathapuram, Kerala, India.</li>
+        <li>Office: Kerala State IT Mission, Pattom, Thiruvananthapuram, Kerala, India</li>
       </ul>
     </section>
   </main>
@@ -77,89 +205,65 @@
     <p>&copy; 2025 Sandip Kumar, IAS. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    function generateDecision(noting, priority) {
+      const text = noting.toLowerCase();
+
+      if (!noting.trim()) {
+        return {
+          decision: 'Insufficient input',
+          reason: 'Please add a concise noting to generate a decision suggestion.',
+          action: 'Return file for detailed noting.'
+        };
+      }
+
+      if (text.includes('approved') || text.includes('compliant') || text.includes('completed')) {
+        return {
+          decision: 'Approve',
+          reason: 'Noting indicates procedural compliance and/or completion status.',
+          action: 'Approve as proposed, subject to financial and audit checks.'
+        };
+      }
+
+      if (text.includes('pending') || text.includes('clarification') || text.includes('incomplete')) {
+        return {
+          decision: 'Seek Clarification',
+          reason: 'Noting reflects pending points that require confirmation before approval.',
+          action: 'Mark back to originating section for point-wise compliance note.'
+        };
+      }
+
+      if (text.includes('violation') || text.includes('irregularity') || text.includes('breach')) {
+        return {
+          decision: 'Reject / Initiate Inquiry',
+          reason: 'Noting indicates possible non-compliance or irregularity.',
+          action: 'Do not approve. Order preliminary fact check and legal/disciplinary opinion.'
+        };
+      }
+
+      return {
+        decision: priority === 'urgent' || priority === 'timebound' ? 'Expedite Review' : 'Put Up for Review',
+        reason: 'No direct approval/rejection trigger detected from noting text.',
+        action: 'Forward to competent authority with comparative facts and rule position.'
+      };
+    }
+
+    document.getElementById('suggestBtn').addEventListener('click', function () {
+      const noting = document.getElementById('notingInput').value;
+      const priority = document.getElementById('priority').value;
+      const fileInput = document.getElementById('officeFile');
+      const fileName = fileInput.files[0] ? fileInput.files[0].name : 'No file uploaded';
+
+      const suggestion = generateDecision(noting, priority);
+      const result = document.getElementById('result');
+      result.style.display = 'block';
+      result.innerHTML = `
+        <strong>Suggested Decision:</strong> ${suggestion.decision}<br>
+        <strong>Reasoning:</strong> ${suggestion.reason}<br>
+        <strong>Suggested Noting Draft:</strong> "${suggestion.action}"<br>
+        <strong>File:</strong> ${fileName}
+      `;
+    });
+  </script>
 </body>
 </html>
-<style>
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
-.about-container {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-}
-
-/* Header */
-header {
-    background-color: #1E90FF;
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-header p {
-    margin: 0;
-    font-size: 1.2rem;
-}
-
-/* Navigation */
-nav ul {
-    list-style: none;
-    padding: 0;
-    background-color: #333;
-    overflow: hidden;
-    margin: 0;
-}
-
-nav ul li {
-    float: left;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #1E90FF;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: #1E90FF;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-</style>
